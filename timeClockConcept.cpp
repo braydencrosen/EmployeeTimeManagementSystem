@@ -1,6 +1,46 @@
-// Author : Brayden Crosen
-// Version: 1.0
-// Purpose: Employee time management system concept without ncurses
+/*
+================================================================================
+Employee Time Management System (prototype)
+
+Author: Brayden Crosen
+Version: 1.0
+
+DESCRIPTION:
+This project is a console-based employee time clock and management system written
+in C++. It simulates a punch clock environment with permission-level-based access
+control for associates, managers, and managers (master access). The system
+tracks employee time status, permissions, and pay while saving all data across
+program runs using text files.
+
+FEATURES:
+- Employee login using 7-digit personnel numbers
+- Clock In / Clock Out functionality
+- Start and End Meal tracking
+- Automatic timestamping of punches to punchRecords.txt
+- Employee data storage to employees.txt
+- Role-based permissions:
+    * Associate
+    * Manager
+    * Manager (master-access)
+- Manager PIN verification for restricted actions
+- View currently clocked-in and on-meal employees
+- Add, remove, and edit employees
+- Change employee pay with permission enforcement
+- Promote/demote employees and manage master access
+- Input validation to prevent invalid or unsafe operations
+
+PERMISSIONS MODEL:
+- Managers (listed as MGR) can:
+    * Change associates' pay
+    * Promote associates to managers
+    * View clocked-in
+    * Add / remove associates
+- Managers with master access (listed as MGR*) can also:
+    * Change all employees' pay
+    * Demote associates
+    * Add / remove employees
+================================================================================
+*/
 #include <iostream>
 #include <vector>
 #include <string>
