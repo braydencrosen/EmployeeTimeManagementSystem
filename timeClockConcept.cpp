@@ -39,6 +39,11 @@ PERMISSIONS MODEL:
     * Change all employees' pay
     * Demote associates
     * Add / remove employees
+
+TODO:
+I plan on rewriting this project and integrating ncurses for a more realistic display
+refresh. Evidently, I'd like to convert this code using the same logic in python
+to an application using tkinter, but that's further down the line. 
 ================================================================================
 */
 #include <iostream>
