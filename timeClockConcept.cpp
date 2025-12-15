@@ -809,7 +809,6 @@ void changeStatus(vector<employee> &employees, int &employeeidx)
         return;
 
     char choice;
-    int pin;
 
     cout << "\nWould you like to:\n"
          << "1 - Promote to manager\n"
