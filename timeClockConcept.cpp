@@ -44,6 +44,17 @@ TODO:
 I plan on rewriting this project and integrating ncurses for a more realistic display
 refresh. Evidently, I'd like to convert this code using the same logic in python
 to an application using tkinter, but that's further down the line. 
+
+GETTING STARTED:
+To log in as a test user, enter the ID: 1111111
+
+To create your own profile:
+
+Log in as test user -> Edit employee info (7) -> Enter manager pin: 1111 -> Add (1) -> Enter name -> Create 7 digit ID# -> Enter pay -> Assign manager (1, recommended) -> Assign master permission (1, recommended) -> Create 4 digit manager pin -> Exit (5)
+
+Once the new profile has been created, it will be saved to employees.txt
+
+To reset all information, simply clear or delete the employees.txt file and the program will auto populate 4 employees and a test user.
 ================================================================================
 */
 #include <iostream>
